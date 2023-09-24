@@ -1,1 +1,43 @@
 /*  your css code here. If applicable */
+
+#container{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas:
+		"n h h h h"
+		"n a a a s"
+		"n a a a s"
+		"n a a a s"
+		"n f f f f"
+}
+
+#nav{
+	background-color: #D7E8D4;
+	grid-area: n;
+}
+
+#header{
+	background-color: yellowgreen;
+	grid-area: h;
+}
+
+#footer{
+	background-color: yellowgreen;
+	grid-area: f;
+}
+
+#article{
+	grid-area: a;
+}
+
+#aside{
+	background-color: beige;
+	grid-area: s;
+}
+
+.pad{
+	padding: 1em;
+}
